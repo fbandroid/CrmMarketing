@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/rgDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:padding="10dp"
+            android:text="Client Document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rbPAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pan" />
+
+        <RadioButton
+            android:id="@+id/rbAdhar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adhar" />
+
+        <RadioButton
+            android:id="@+id/rbBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank" />
+
+        <RadioButton
+            android:id="@+id/rbPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/photo" />
+
+        <TextView
+            android:padding="10dp"
+            android:text="Nominee Document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <RadioButton
+            android:text="Nominee PAN card/adhar card"
+            android:id="@+id/rbNomineePAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:text="Upload Document"
+        android:textColor="@android:color/white" />
+
+    <Spinner
+        android:visibility="gone"
+        android:entries="@array/document"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spDocument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rvDocList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dimen_10" />
+
+
+</LinearLayout>

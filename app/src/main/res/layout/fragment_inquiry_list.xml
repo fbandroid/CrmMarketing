@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent_view">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView android:layout_weight="1"
+            android:id="@+id/fragment_inquiry_list_tvFilter"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dimen_05"
+            android:drawableStart="@drawable/ic_filter_list_black_24dp"
+          android:text="FILTER"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:hint="Customer Name"
+            android:id="@+id/edtCusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/fragment_inquiry_list_tvSort"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dimen_05"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_inquiry_list_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

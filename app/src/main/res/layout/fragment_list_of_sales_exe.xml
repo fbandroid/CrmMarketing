@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:autolabel="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_team_lead">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/dimen_02">
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimen_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    android:padding="@dimen/dimen_05"
+                    android:id="@+id/row_fragment_team_lead_ivprofile"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:padding="@dimen/dimen_05"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:text="Emma Watson"
+                    android:ellipsize="end"
+                    android:layout_toEndOf="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_fragment_team_lead_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="@dimen/dimen_05"
+                    android:textSize="16sp"
+                    android:text="104"
+                    android:layout_below="@+id/row_fragment_team_lead_tvName"
+                    android:layout_toEndOf="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_admin_dashboard_tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:padding="@dimen/dimen_10"
+                    android:textSize="16sp"
+                    android:text="9558521007"
+                    android:layout_below="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_fragment_team_lead_tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.dpizarro.autolabel.library.AutoLabelUI
+                    android:layout_below="@id/row_fragment_team_lead_tvPhone"
+                    android:id="@+id/row_fragment_team_lead_autoLable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <Button
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:visibility="gone"
+                    android:layout_below="@+id/row_fragment_team_lead_autoLable"
+                    android:text="Save"
+                    android:textColor="@android:color/white"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/row_fragment_team_lead_btnAddMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:paddingTop="@dimen/dimen_10"
+            android:id="@+id/fragment_list_of_salesexe_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

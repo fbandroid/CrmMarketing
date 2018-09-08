@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crmmarketing.hmt">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".CrmApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- NetworkChangeReceiver -->
+        <!-- <receiver -->
+
+
+        <!-- android:name=".NetworkChangeReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:label="NetworkChangeReceiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+        <!-- <action android:name="android.net.wifi.WIFI_STATE_CHANGED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".HomeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".AdminDashboardActiviy" />
+
+        <service
+            android:name=".services.SynchToServer"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.INTERNET" />
+
+        <activity
+            android:name=".InquirtDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewTargetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditInquiryactivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name=".services.CheckStatus"
+            android:exported="false" />
+        <service
+            android:name=".services.GeocodeAddressIntentService"
+            android:exported="false" />
+
+        <receiver
+            android:name=".common.MyStatusCheck"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="status" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.MyService"
+            android:process=":my_service" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB9tIwsbo2SQN258HiO01ukNUFYfuL2I5o" />
+
+        <activity android:name=".FNOActivity" />
+        <activity android:name=".ConfirmUploadActivity" />
+        <activity android:name=".ViewDocumentActivity" />
+        <activity
+            android:name=".ViewVolumeDetailActivity"
+            android:label="@string/title_activity_view_volume_detail"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ViewVolumeDetailActivity"
+    tools:showIn="@layout/activity_view_volume_detail">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/BottomContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Name" />
+
+
+            <TextView
+                android:id="@+id/tvCRPR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName"
+                tools:text="222 cr" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInRemark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvCRPR">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/edtRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Remark"
+                    android:inputType="text" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInNoOfDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnSubmitFollowup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtInRemark">
+
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="177dp"
+                    android:id="@+id/edtNoOfDay"
+                    android:layout_height="wrap_content"
+                    android:hint="Follow Up in days"
+                    android:inputType="number" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSubmitFollowup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/colorPrimary"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtInNoOfDays"
+                app:layout_constraintTop_toBottomOf="@+id/txtInRemark" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/BottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+     <LinearLayout
+         android:layout_margin="16dp"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <TextView
+             tools:text="Name"
+             android:textSize="16sp"
+             android:id="@+id/tvNameOfCustomer"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             tools:text="TSB2122"
+             android:layout_marginTop="16dp"
+             android:textSize="16sp"
+             android:id="@+id/tvTSBCode"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             tools:text="Cheque collected.."
+             android:layout_marginTop="16dp"
+             android:textSize="16sp"
+             android:id="@+id/tvRemark"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+           <android.support.design.widget.TextInputLayout
+               android:layout_marginTop="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               
+               
+               <android.support.design.widget.TextInputEditText
+                   android:id="@+id/edtFollowRemark"
+                   android:inputType="text"
+                   android:hint="Remark"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               
+           </android.support.design.widget.TextInputLayout>
+
+
+         <TextView
+             android:visibility="gone"
+             android:layout_marginTop="16dp"
+             android:textStyle="bold"
+             android:textSize="16sp"
+             tools:text="Completed"
+             android:id="@+id/tvStatus"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+
+         <RadioGroup
+             android:layout_marginTop="16dp"
+             android:id="@+id/rgStatus"
+             android:orientation="horizontal"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+
+             <RadioButton
+                 android:checked="true"
+                 android:layout_marginEnd="20dp"
+                 android:text="Completed"
+                 android:id="@+id/rbComplete"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+             <RadioButton
+                 android:text="Canceled"
+                 android:id="@+id/rbCancel"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" />
+
+
+         </RadioGroup>
+
+
+
+
+
+         <Button
+             android:layout_gravity="center"
+             android:layout_marginTop="30dp"
+             android:layout_marginBottom="30dp"
+             android:text="Follow up"
+             android:textColor="@android:color/white"
+             android:background="@color/colorPrimary"
+             android:id="@+id/btnUpdateFollowUp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+
+           
+
+
+
+     </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

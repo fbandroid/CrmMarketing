@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/cbEmergency"
+            android:text="Emergency leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:hint="Start Date"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvStartDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+
+            android:visibility="visible"
+            android:padding="10dp"
+            android:hint="End Date"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/tvEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_marginBottom="15dp"
+            android:hint="No of day"
+            android:inputType="number"
+            android:maxLength="3"
+            android:id="@+id/edtNoOfDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:entries="@array/leave"
+            android:id="@+id/spLeave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:hint="Description"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:id="@+id/edtDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btnRequest"
+            android:layout_gravity="end"
+            android:text="Request"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

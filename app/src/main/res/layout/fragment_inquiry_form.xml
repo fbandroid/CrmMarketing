@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/rgTSBSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <RadioButton
+                        android:id="@+id/rbTSB"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="TSB code" />
+
+                    <RadioButton
+                        android:id="@+id/rbPAN"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="PAN No" />
+
+                    <RadioButton
+                        android:id="@+id/rbName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Customer Name" />
+
+                </RadioGroup>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/edt_tsbcode_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Search.."
+                            android:inputType="text" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <!--<FrameLayout android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="10dp">-->
+
+                    <!--<com.crmmarketing.hmt.common.DelayAutoCompleteTextView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/autoCustomerName"-->
+                    <!--android:inputType="textCapSentences"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:imeOptions="flagNoExtractUi|actionSearch"/>-->
+
+                    <!--<ProgressBar-->
+                    <!--android:id="@+id/pb_loading_indicator"-->
+                    <!--style="?android:attr/progressBarStyleSmall"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical|right"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:visibility="gone"/>-->
+                    <!--</FrameLayout>-->
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/autoCustomerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Type customer Name"
+                        android:inputType="text"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_10"
+                    android:text="Customer Personal Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/fragment_inquiry_form_edtApplicantName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:hint="Customer Name"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:padding="@dimen/dimen_10" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtMotherName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="Mother Name"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtAddr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="City"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtZip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="Zip Code"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtState"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="State"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtMobileNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile No"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="@dimen/dimen_10" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="LandLine Phone"
+                        android:inputType="number"
+
+                        android:maxLength="11"
+                        android:padding="@dimen/dimen_10" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtOptionalEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Alternate Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtPAN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PAN NO"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtFamilyCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Family Code"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtBirthPlace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|start"
+                        android:hint="Birth Place"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/fragment_inquiry_form_btnDatePick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_05"
+                        android:text="Birth Date"
+                        android:textAllCaps="false" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_inquiry_form_tvBirth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:id="@+id/fragment_inquiry_form_spOccupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtOccDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Occupation Detail"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_10"
+                    android:text="Product Detail"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/fragment_inquiry_form_ProductAutoComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:dropDownHeight="150dp"
+                    android:hint="Search.." />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/fragment_inquiry_form_rvProductAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20" />
+
+
+                <Spinner
+                    android:id="@+id/fragment_inquiry_form_spRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:visibility="gone" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Amount"
+                        android:inputType="number"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_10"
+                    android:text="FollowUp Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/rgStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="pending" />
+
+                    <RadioButton
+                        android:id="@+id/rbConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Confirm" />
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:id="@+id/llFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_20"
+                        android:layout_weight="1">
+
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/fragment_inquiry_form_edtFeedbackDay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="FollowUp Days"
+                            android:inputType="number"
+                            android:padding="@dimen/dimen_10"
+                            android:text="" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_20"
+                        android:layout_weight="1">
+
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/fragment_inquiry_form_edtTime"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Time"
+                            android:inputType="text"
+                            android:padding="@dimen/dimen_10"
+                            android:text="" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtSource"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Remark"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_10"
+                    android:text="Nominee Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtNomineeName"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nominee Name"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/fragment_inquiry_form_btnDatePickNominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dimen_05"
+                        android:text="Nominee Birth Date"
+                        android:textAllCaps="false" />
+
+
+                    <TextView
+                        android:id="@+id/fragment_inquiry_form_tvBirthNominee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtNomineePAN"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nominee PAN no"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtNomineeAdhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nominee Adhar No"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtNomineeRelation"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nominee Relation"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            app:cardElevation="@dimen/dimen_02"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dimen_10">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:padding="@dimen/dimen_10"
+                    android:text="Reference Information"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtRefereeName"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reference Name"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtRefereeEmail"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reference Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtRefereePhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reference Phone"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtrefCose"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reference code"
+                        android:inputType="text"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/fragment_inquiry_form_edtOtherDetail"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Other Deatil"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/dimen_10"
+                        android:text="" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/fragment_inquiry_form_btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/dimen_20"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+
+

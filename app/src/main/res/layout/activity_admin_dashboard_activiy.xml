@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_30sdp"
+    android:layout_marginBottom="@dimen/_30sdp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:id="@+id/activity_admin_dashboard_activiy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.crmmarketing.hmt.AdminDashboardActiviy">
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16">
+
+            <android.support.v7.widget.CardView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:elevation="@dimen/dimen_02"
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                app:cardBackgroundColor="@color/dark_purple22">
+
+
+                <TextView
+                    android:drawableTop="@drawable/conversation"
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/dimen_05"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Inquiry"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/dark_green">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:text="Final Lead"
+                    android:textSize="16sp"
+                    android:padding="@dimen/dimen_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/dark_purple">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/dimen_05"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Performance\nAnalysis"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                app:cardBackgroundColor="@color/dark_brown">
+
+                <TextView
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dimen_05"
+                    android:layout_gravity="center"
+                    android:text="Executive"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

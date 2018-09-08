@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/constraintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16ssp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/tvStep"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="@dimen/_16sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvStep"
+                android:text="Step 1"
+                android:textSize="@dimen/_16ssp"
+                android:id="@+id/tvStepTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="136dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep"
+                app:layout_constraintHorizontal_bias="0.13" />
+
+
+            <TextView
+                android:id="@+id/seperator"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep"
+                app:layout_constraintStart_toStartOf="@+id/tvStep"
+                app:layout_constraintEnd_toEndOf="@+id/tvStep"
+                app:layout_constraintBottom_toTopOf="@+id/tvStep2"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                tools:layout_editor_absoluteX="80dp" />
+
+
+            <LinearLayout
+                android:paddingEnd="@dimen/_16sdp"
+                android:visibility="gone"
+                android:id="@+id/llForm"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep"
+                app:layout_constraintStart_toEndOf="@+id/tvStep"
+                app:layout_constraintEnd_toEndOf="@id/constraintView"
+                app:layout_constraintTop_toBottomOf="@+id/tvStepTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:text="Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="2"
+                android:textSize="@dimen/_16ssp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/tvStep2"
+
+                app:layout_constraintTop_toBottomOf="@+id/llForm"
+                app:layout_constraintLeft_toLeftOf="@+id/tvStep"
+                app:layout_constraintRight_toRightOf="@+id/tvStep"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:layout_marginTop="56dp" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/llForm"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvStep2"
+                android:text="Step 2"
+                android:textSize="@dimen/_16ssp"
+                android:id="@+id/tvStepTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="136dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep2"
+                app:layout_constraintHorizontal_bias="0.13" />
+
+
+            <TextView
+                android:id="@+id/seperator2"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep2"
+                app:layout_constraintStart_toStartOf="@+id/tvStep2"
+                app:layout_constraintEnd_toEndOf="@+id/tvStep2"
+                app:layout_constraintBottom_toTopOf="@+id/tvStep3"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                tools:layout_editor_absoluteX="80dp" />
+
+
+            <LinearLayout
+                android:paddingEnd="@dimen/_16sdp"
+                android:visibility="visible"
+                android:id="@+id/llForm2"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep2"
+                app:layout_constraintStart_toEndOf="@+id/tvStep2"
+                app:layout_constraintEnd_toEndOf="@id/constraintView"
+                app:layout_constraintTop_toBottomOf="@+id/tvStepTitle2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:text="Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:text="3"
+                android:textSize="@dimen/_16ssp"
+                android:gravity="center"
+                android:background="@drawable/bg_circle"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:id="@+id/tvStep3"
+
+                app:layout_constraintTop_toBottomOf="@+id/llForm2"
+                app:layout_constraintLeft_toLeftOf="@+id/tvStep2"
+                app:layout_constraintRight_toRightOf="@+id/tvStep2"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:layout_marginTop="56dp" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/llForm2"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvStep3"
+                android:text="Step 3"
+                android:textSize="@dimen/_16ssp"
+                android:id="@+id/tvStepTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="136dp"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginStart="8dp"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep3"
+                app:layout_constraintHorizontal_bias="0.13" />
+
+
+            <TextView
+                android:id="@+id/seperator3"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/tvStep3"
+                app:layout_constraintStart_toStartOf="@+id/tvStep3"
+                app:layout_constraintEnd_toEndOf="@+id/tvStep3"
+                app:layout_constraintBottom_toBottomOf="@+id/llForm3"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                tools:layout_editor_absoluteX="80dp" />
+
+
+            <LinearLayout
+                android:paddingEnd="@dimen/_16sdp"
+
+                android:visibility="visible"
+                android:id="@+id/llForm3"
+                app:layout_constraintLeft_toRightOf="@+id/tvStep3"
+                app:layout_constraintStart_toEndOf="@+id/tvStep3"
+                app:layout_constraintEnd_toEndOf="@id/constraintView"
+                app:layout_constraintTop_toBottomOf="@+id/tvStepTitle3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:text="Continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

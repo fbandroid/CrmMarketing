@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_toStartOf="@+id/tvBranchName"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:text="Inquiry Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:id="@+id/tvInqDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12sp"
+                android:text="Follow Up Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:id="@+id/tvInqFeedBackDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:id="@+id/tvPrList"
+        android:layout_below="@+id/llTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:text="Interested"
+        android:layout_below="@+id/tvPrList"
+        android:id="@+id/tvRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="5dp"
+        android:text="Himatnagar"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvBranchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvBranchName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

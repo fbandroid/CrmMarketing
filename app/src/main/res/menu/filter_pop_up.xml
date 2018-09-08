@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/filter_All"
+        android:title="All" />
+
+    <item
+        android:id="@+id/filter_cancel"
+        android:title="cancel inquiry" />
+    <item
+        android:id="@+id/filter_pending"
+        android:title="pending inquiry" />
+
+    <item
+        android:id="@+id/filter_confirm"
+        android:title="Confirm inquiry" />
+    <item
+        android:id="@+id/filter_date"
+        android:title="by Date" />
+
+
+</menu>

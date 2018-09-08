@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvPunchIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="33dp">
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/tvPunchIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/password"
+            android:text="Punch In"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+             />
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvtravel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintLeft_toRightOf="@+id/cvPunchOut"
+        android:layout_marginLeft="8dp">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:id="@+id/tvTravelling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/travel"
+            android:text="Travelling"
+            android:textSize="16sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvPunchOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="33dp"
+        app:layout_constraintLeft_toRightOf="@+id/cvPunchIn"
+        android:layout_marginLeft="8dp">
+
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:id="@+id/tvPunchOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/logout"
+            android:text="Punch Out"
+            android:textSize="16sp" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvReport"
+        android:layout_width="84dp"
+        android:layout_height="101dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cvtravel"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="125dp">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/tvReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/reportt"
+            android:text="Report"
+            android:textSize="16sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvTravelReport"
+        android:layout_width="89dp"
+        android:layout_height="102dp"
+        app:layout_constraintStart_toEndOf="@+id/cvReport"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cvtravel">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/tvTravelReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/travel"
+            android:text="@string/travel_nreport"
+            android:textSize="16sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

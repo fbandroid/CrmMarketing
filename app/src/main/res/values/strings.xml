@@ -1,0 +1,170 @@
+<resources>
+    <string name="app_name">CrmMarketing</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">LogOut</string>
+    <string name="username">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+
+    <!-- api -->
+    <string name="login_url">http://www.tirthwealthmgt.in/crm/home/loginapi</string>
+    <string name="inq_insert_url">http://www.tirthwealthmgt.in/crm/lead/addleadapi</string>
+    <string name="inq_list">http://www.tirthwealthmgt.in/crm/lead/leadlistapi</string>
+    <string name="inq_list_followup">http://www.tirthwealthmgt.in/crm/lead/todayleadlistapi</string>
+    <string name="pr_list">http://www.tirthwealthmgt.in/crm/product/productlistapi</string>
+    <string name="remark_api">http://www.tirthwealthmgt.in/crm/lead/updatefeedbackapi</string>
+    <string name="completed_api">http://www.tirthwealthmgt.in/crm/lead/todayupdatedleadlistapi</string>
+    <string name="view_tar_api">http://www.tirthwealthmgt.in/crm/target/targetlistapi</string>
+    <string name="get_emp_list">http://www.tirthwealthmgt.in/crm/user/userlistapi</string>
+    <string name="gett_pr_list">http://www.tirthwealthmgt.in/crm/product/productlistbyuserapi</string>
+    <string name="edit_inq">http://www.tirthwealthmgt.in/crm/lead/editleadapi</string>
+    <string name="fetch_by_date">http://www.tirthwealthmgt.in/crm/lead/filterleadsapi</string>
+
+
+    <!--Test development-->
+    <!--<string name="login_url">http://tcrm.codefuelindia.com/home/loginapi</string>-->
+    <!--<string name="inq_insert_url">http://tcrm.codefuelindia.com/lead/addleadapi</string>-->
+    <!--<string name="inq_list">http://tcrm.codefuelindia.com/lead/leadlistapi</string>-->
+    <!--<string name="inq_list_followup">http://tcrm.codefuelindia.com/lead/todayleadlistapi</string>-->
+    <!--<string name="pr_list">http://tcrm.codefuelindia.com/product/productlistapi</string>-->
+    <!--<string name="remark_api">http://tcrm.codefuelindia.com/lead/updatefeedbackapi</string>-->
+    <!--<string name="completed_api">http://tcrm.codefuelindia.com/lead/todayupdatedleadlistapi</string>-->
+    <!--<string name="view_tar_api">http://tcrm.codefuelindia.com/target/targetlistapi</string>-->
+    <!--<string name="get_emp_list">http://tcrm.codefuelindia.com/user/userlistapi</string>-->
+    <!--<string name="gett_pr_list">http://tcrm.codefuelindia.com/product/productlistbyuserapi</string>-->
+    <!--<string name="edit_inq">http://tcrm.codefuelindia.com/lead/editleadapi</string>-->
+    <!--<string name="fetch_by_date">http://tcrm.codefuelindia.com/lead/filterleadsapi</string>-->
+
+    <!-- test development-->
+
+    <string name="api_token">BA326C6BC3AD52ED2861784D680D2348F2F8DFB9131DF2AAECBFBE20C1884FF7</string>
+    <string name="today_s_nfollowup">Today\'s FollowUp</string>
+    <string name="today_s_ncompleted_nfollowup">Today\'s Completed FollowUp</string>
+    <string name="travel_nreport">Travel \n Report</string>
+    <string name="volume_ndata">Volume\nData</string>
+    <string name="request_nleave">Request\n Leave</string>
+
+
+    <string-array name="product_category">
+        <item>Equity</item>
+        <item>IPO</item>
+        <item>FD</item>
+        <item>Mutual Fund</item>
+
+    </string-array>
+
+
+    <string-array name="occupation">
+        <item>Service</item>
+        <item>Business</item>
+        <item>Professional</item>
+        <item>Self Employee</item>
+        <item>Other</item>
+
+
+    </string-array>
+
+
+    <string-array name="range">
+        <item>0–5000</item>
+        <item>5000–10000</item>
+        <item>10000–20000</item>
+        <item>20000–50000</item>
+        <item>50000–100000</item>
+        <item>100000–500000</item>
+        <item>500000 above</item>
+
+    </string-array>
+
+    <string-array name="color_array">
+        <item>@color/dark_green</item>
+        <item>@color/dark_brown</item>
+        <item>@color/dark_red</item>
+        <item>@color/darkGreen</item>
+        <item>@color/darkPink</item>
+        <item>@color/dark_purple</item>
+
+    </string-array>
+
+
+    <string-array name="status">
+        <item>Pending</item>
+        <item>confirm</item>
+        <item>canceled</item>
+        <item>pending with confirm</item>
+
+
+    </string-array>
+
+    <string-array name="ecs_type">
+        <item>Approve</item>
+        <item>Reject</item>
+    </string-array>
+
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+
+    </string-array>
+
+    <string-array name="request_expense">
+        <item>Petrol Allowance</item>
+        <item>Travelling Allowance</item>
+        <item>Mobile Allowance</item>
+        <item>Other</item>
+        <item>Borrow Money( ઉપાડ )</item>
+
+    </string-array>
+
+    <string-array name="leave">
+        <item>D.L</item>
+        <item>C.L</item>
+    </string-array>
+
+
+    <string name="pan">PAN Card</string>
+    <string name="adhar">Adhar/Licence/Passport/Ration/Voter id</string>
+    <string name="bank">Cancel Cheque/Passbook</string>
+    <string name="photo">Photo</string>
+    <string name="approve_leave">Approve\n Leave</string>
+
+    <string-array name="document">
+        <item>PAN Card</item>
+        <item>Adhar/Licence/Passport/Ration/Voter id</item>
+        <item>Cancel Cheque/Passbook</item>
+        <item>Photo</item>
+        <item>Nominee Adhar/PAN</item>
+    </string-array>
+
+
+    <string-array name="search_client">
+        <item>Name</item>
+        <item>Mobile</item>
+        <item>TSBCode</item>
+        <item>FamilyCode</item>
+        <item>PAN</item>
+        <item>Inscode</item>
+        <item>MFcode</item>
+        <item>PMScode</item>
+
+
+    </string-array>
+    <string name="title_activity_view_volume_detail">ViewVolumeDetailActivity</string>
+
+</resources>

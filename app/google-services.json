@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "121733486906",
+    "fireBASE_URL": "https://mychat-8c8da.firebaseio.com",
+    "project_id": "mychat-8c8da",
+    "storage_bucket": "mychat-8c8da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121733486906:android:db9070a0518e72d9",
+        "android_client_info": {
+          "package_name": "com.crmmarketing.hmt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121733486906-3kskrlmkebdevrk52uc1vcmal7vavbm0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crmmarketing.hmt",
+            "certificate_hash": "83c4f55bc36add562063ff99bca32ed0071849d0"
+          }
+        },
+        {
+          "client_id": "121733486906-od3c0vd62gf4bvoc8fncbeb6prtk02vc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDG6EI5J1_gNhshjOcH-DhbDSnjr8JKaTE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121733486906-od3c0vd62gf4bvoc8fncbeb6prtk02vc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

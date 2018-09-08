@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardUseCompatPadding="true"
+            app:cardElevation="@dimen/dimen_02">
+
+            <RelativeLayout
+                android:layout_margin="@dimen/dimen_05"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile"
+                    android:padding="@dimen/dimen_05"
+                    android:id="@+id/row_fragment_team_lead_ivprofile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:padding="@dimen/dimen_05"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:text="Emma Watson"
+                    android:ellipsize="end"
+                    android:layout_toEndOf="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_fragment_team_lead_tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="@dimen/dimen_05"
+                    android:textSize="16sp"
+                    android:text="104"
+                    android:layout_below="@+id/row_fragment_team_lead_tvName"
+                    android:layout_toEndOf="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_admin_dashboard_tvId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="@dimen/dimen_10"
+                    android:textSize="16sp"
+                    android:text="7-c ,kailadevi park mahavirnagar\nHimatnagar."
+                    android:layout_below="@+id/row_fragment_team_lead_ivprofile"
+                    android:id="@+id/row_fragment_team_lead_tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:padding="@dimen/dimen_10"
+                    android:textSize="16sp"
+                    android:text="9558521007"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/row_fragment_team_lead_tvAddress"
+                    android:id="@+id/row_fragment_team_lead_tvPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row_fragment_team_lead_tvPhone"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageButton
+                        android:padding="@dimen/dimen_10"
+                        android:id="@+id/row_fragment_team_lead_btnView"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_purple"
+                        android:src="@drawable/ic_view_list_light_green_900_24dp"
+                        style="?android:attr/borderlessButtonStyle"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageButton
+                        android:src="@drawable/ic_edit_purple_a700_24dp"
+                        android:padding="@dimen/dimen_10"
+                        android:id="@+id/row_fragment_team_lead_btnEdit"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_purple"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                    <ImageButton
+                        android:src="@drawable/ic_delete_deep_orange_600_24dp"
+                        android:padding="@dimen/dimen_10"
+                        android:id="@+id/row_fragment_team_lead_btnDelete"
+                        android:textStyle="bold"
+                        android:textColor="@color/dark_purple"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

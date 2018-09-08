@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dimen_10"
+    android:paddingTop="@dimen/dimen_10">
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/bg_circle">
+
+        <TextView
+            android:id="@+id/tvFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/dimen_05"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/fragment_target_list_tvCusName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/frame_layout"
+        android:drawablePadding="@dimen/dimen_10"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fragment_target_list_tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_target_list_tvCusName"
+        android:layout_toEndOf="@+id/frame_layout"
+        android:drawablePadding="@dimen/dimen_10"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/fragment_target_list_tvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_target_list_tvDate"
+        android:layout_toEndOf="@+id/frame_layout"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
+
+
+
+
+

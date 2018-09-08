@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/dimen_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_40">
+
+        <TextView
+            android:id="@+id/fragment_add_target_tvSelectUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20"
+            android:drawableEnd="@android:drawable/arrow_down_float"
+            android:drawablePadding="@dimen/dimen_10"
+            android:text="Select User.." />
+
+
+        <Spinner
+            android:id="@+id/fragment_add_target_spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fragment_add_target_btnStartDate"
+                style="?attr/borderlessButtonStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:text="Start Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20" />
+
+            <TextView
+                android:id="@+id/fragment_add_target_tvStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/fragment_add_target_btnEndDate"
+                style="?attr/borderlessButtonStyle"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:text="End  Date "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_20" />
+
+            <TextView
+                android:id="@+id/fragment_add_target_tvEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_add_target_rvProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <Button
+            android:id="@+id/fragment_add_target_btnSubmit"
+            android:layout_gravity="end"
+            android:textColor="@android:color/white"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

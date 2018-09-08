@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/businessiconss"
+    android:hardwareAccelerated="true">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="@dimen/dimen_30"
+        android:paddingBottom="@dimen/dimen_30"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:id="@+id/activity_admin_dashboard_activiy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.crmmarketing.hmt.HomeActivity">
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/dimen_05">
+
+                <android.support.v7.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:id="@+id/fragment_me_dashboard_cvInquiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dimen_05"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    app:cardBackgroundColor="@color/dark_purple22">
+
+
+                    <TextView
+                        android:drawableTop="@drawable/conversation"
+                        android:textColor="@android:color/white"
+                        android:padding="@dimen/dimen_05"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:text="Inquiry"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginEnd="@dimen/dimen_05">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/fragment_me_dashboard_cvFinalLead"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/dimen_10"
+                    android:layout_marginStart="@dimen/dimen_05"
+                    android:layout_marginEnd="@dimen/dimen_05"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/dark_green">
+
+                    <TextView
+                        android:drawableTop="@drawable/conversation"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:text="Today's\nFollowUp"
+                        android:textSize="16sp"
+                        android:padding="@dimen/dimen_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </android.support.v7.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_me_dashboard_cvPerformanceAnalysis"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardBackgroundColor="@color/dark_purple">
+
+                <TextView
+                    android:gravity="center"
+                    android:drawableTop="@drawable/linechart"
+                    android:textColor="@android:color/white"
+                    android:padding="@dimen/dimen_05"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:text="Today's\nCompleted\nFollowUp"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fragment_me_dashboard_cvViewTarget"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:layout_marginStart="@dimen/dimen_05"
+                android:layout_marginEnd="@dimen/dimen_05"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                app:cardBackgroundColor="@color/dark_brown">
+
+                <TextView
+                    android:drawableTop="@drawable/presentation"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:padding="@dimen/dimen_05"
+                    android:layout_gravity="center"
+                    android:text="View Target"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

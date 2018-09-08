@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:id="@+id/tvCusName"
+        android:layout_toStartOf="@+id/tvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_below="@+id/tvCusName"
+        android:id="@+id/tvInqDate"
+        android:layout_toStartOf="@+id/btnAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Action"
+        android:id="@+id/btnAction"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tvCusName"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="10dp"
+        android:layout_below="@+id/tvInqDate"
+        android:id="@+id/tvEmpName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
